@@ -1,5 +1,5 @@
 .start {
-  background-color: orangered;
+  background-color: rgb(252, 97, 36);
   color: aliceblue;
 }
 .logo-img {
@@ -7,7 +7,10 @@
   width: auto;
 }
 .navigation .nav-link:hover {
-  color: orangered !important;
+  color: rgb(252, 97, 36) !important;
+}
+.bg-bg {
+  background-color: rgb(252, 97, 36) !important;
 }
 .home {
   background-image: url("https://t4.ftcdn.net/jpg/13/35/44/97/360_F_1335449787_c3SLCYxrGa8U6yKzm0GIgjfNBFLQIZcE.jpg");
@@ -29,11 +32,12 @@
 }
 .first {
   max-width: 500px;
-  color: orangered;
+  color: rgb(252, 97, 36);
   font-weight: bold;
   font-size: 1.2em;
 }
 .card {
+  gap: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .custom-card {
@@ -41,17 +45,27 @@
   display: flex;
   flex-direction: column;
 }
+.custom-progress {
+  background-color: #7c7878 !important;
+  height: 6px;
+  border-radius: none !important;
+}
 
+.custom-progress .progress-bar {
+  border-radius: none !important;
+}
+.card-text {
+  color: #7c7878;
+}
 .custom-card .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  margin: 0;
+  background-color: rgb(231, 229, 229);
 }
 
-.custom-progress {
-  height: 6px; /* thinner progress bar */
-}
 .donate {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIpbYcD6ePRJzsmEDJG8BLfDmmRH-awIT4Xg&s");
   background-size: cover;
@@ -60,12 +74,13 @@
   min-height: 70vh;
   position: relative;
   padding: 3rem 1rem;
+  margin: 10%;
 }
 
 .donate-card {
   width: 100%;
   max-width: 400px;
-  margin-top: 2rem;
+
   color: white;
 }
 
@@ -110,7 +125,9 @@
   }
 }
 
-.heading {
+.heading,
+.heading1,
+.heading2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +146,7 @@
   transform: translateX(-50%);
   width: 30px;
   height: 3px;
-  background-color: orangered;
+  background-color: rgb(252, 97, 36);
   border-radius: 2px; /* optional: make line ends a little rounded */
 }
 
@@ -143,7 +160,7 @@
   color: white;
 }
 .bg- {
-  background-color: lightgray;
+  background-color: rgb(230, 228, 228);
 }
 .services1 > li > a > i {
   font-size: 40px;
@@ -152,7 +169,7 @@
 }
 
 .services1 > .nav-item {
-  border: 1px solid grey;
+  border: 1px solid rgb(224, 222, 222);
   border-radius: 3px;
   padding: 30px 20px;
   margin: 0;
@@ -171,7 +188,7 @@
 
 .firsts {
   font-size: large;
-  color: orangered;
+  color: rgb(252, 97, 36);
   font-weight: bold;
 }
 .img-container img {
@@ -179,4 +196,70 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+.texts {
+  color: rgb(252, 97, 36);
+}
+.btn-btn {
+  background-color: rgb(252, 97, 36) !important; /* Light green */
+  color: white !important;
+  margin: 10px 0 !important;
+  padding: 10px 25px !important;
+  border: none !important;
+  cursor: pointer !important;
+  border-radius: 0px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}
+.btn-lights {
+  background-color: white !important; /* Light green */
+  color: black !important;
+  margin: 10px 0 !important;
+  padding: 10px 25px !important;
+  border: none !important;
+  cursor: pointer !important;
+  border-radius: 0px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}
+.progress {
+  height: 10px !important;
+  border-radius: none;
+}
+.btn-donate {
+  background-color: rgb(29, 28, 28) !important; /* Light green */
+  color: white !important;
+  margin: 10px 0 !important;
+  padding: 10px 25px !important;
+  border: none !important;
+  cursor: pointer !important;
+  border-radius: 0px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}
+
+.heading1::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: rgb(252, 97, 36);
+  border-radius: 2px; /* optional: make line ends a little rounded */
+}
+.heading2::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: rgb(204, 201, 201);
+  border-radius: 2px; /* optional: make line ends a little rounded */
 }

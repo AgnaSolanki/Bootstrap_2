@@ -33,12 +33,11 @@
     <header class="container-fluid p-0">
       <!-- Top Header (Contact + Social Media) -->
       <div class="container-fluid p-0">
-        <!-- Top Header (Contact + Social Media) -->
         <nav class="navbar navbar-expand-sm small py-2 start">
           <div
             class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
           >
-            <!-- Contact Info -->
+            <!-- Contact Info Text -->
             <ul class="navbar-nav flex-column flex-sm-row mb-md-0">
               <li
                 class="nav-item mt-2 d-flex align-items-center fw-bold text-capitalize"
@@ -46,9 +45,8 @@
                 <p>Urgent: Awesome Template for Charity & non profit site</p>
               </li>
             </ul>
-
             <!-- Social Icons -->
-            <ul class="navbar-nav flex-row">
+            <ul class="navbar-nav flex-row d-none d-md-flex">
               <li class="nav-item m-2">
                 <a class="nav-link text-white p-0" href="#"
                   ><i class="fa-brands fa-facebook"></i
@@ -74,7 +72,6 @@
                   ><i class="fa-brands fa-linkedin-in"></i
                 ></a>
               </li>
-
               <li class="nav-item m-2">
                 <a class="nav-link text-white p-0" href="#"
                   ><i class="fa-brands fa-instagram"></i
@@ -84,6 +81,8 @@
           </div>
         </nav>
       </div>
+
+      <!-- Main Navbar -->
       <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
         <div class="container">
           <!-- Logo -->
@@ -91,30 +90,18 @@
             <img src="./image.png" alt="logo" class="logo-img" />
           </a>
 
-          <!-- Toggle button for mobile -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Collapsible content -->
+          <!-- Collapsible Content (No toggle button) -->
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
             <ul class="navbar-nav align-items-center">
-              <li class="nav-item mx-2">
+              <!-- Visible on large screens only -->
+              <li class="nav-item mx-2 d-none d-lg-block">
                 <a class="nav-link active" href="#home">
                   <div class="d-flex align-items-center">
                     <i
-                      class="fa-solid fa-envelope rounded-circle bg-light p-3 text-danger me-2"
+                      class="fa-solid fa-envelope rounded-circle bg-light p-3 texts me-2"
                     ></i>
                     <div class="title">
                       <h6 class="mb-0 text-secondary">Mail:</h6>
@@ -123,11 +110,11 @@
                   </div>
                 </a>
               </li>
-              <li class="nav-item mx-2">
+              <li class="nav-item mx-2 d-none d-lg-block">
                 <a class="nav-link active" href="#home">
                   <div class="d-flex align-items-center">
                     <i
-                      class="fa-solid fa-phone rounded-circle bg-light p-3 text-danger me-2"
+                      class="fa-solid fa-phone rounded-circle bg-light p-3 texts me-2"
                     ></i>
                     <div class="title">
                       <h6 class="mb-0 text-secondary">Contact Us:</h6>
@@ -136,53 +123,103 @@
                   </div>
                 </a>
               </li>
-              <li class="nav-item mx-2 mt-2 mt-lg-0">
-                <a class="btn btn-danger text-white" href="#donate"
-                  >Donate Now</a
-                >
+              <!-- Donate Button -->
+              <li class="nav-item mx-2 mt-2 mt-lg-0 d-none d-lg-block">
+                <a class="btn btn-btn text-white" href="#donate">Donate Now</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div>
-        <ul
-          class="nav bg-dark justify-content-center text-uppercase navigation"
-        >
-          <li class="nav-item">
-            <a class="nav-link text-white my-2" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white my-2" href="#">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white my-2" href="#">causes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white my-2" href="#">page</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white my-2" href="#">event</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white my-2" href="#">contact us</a>
-          </li>
-        </ul>
-      </div>
+
+      <!-- Bottom Navigation -->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid justify-content-end">
+          <!-- Toggler button (mobile) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+            aria-controls="collapsibleNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible navigation items -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav text-uppercase flex-wrap text-center">
+              <li class="nav-item">
+                <a class="nav-link text-white my-2" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white my-2" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white my-2" href="#">Causes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white my-2" href="#">Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white my-2" href="#">Event</a>
+              </li>
+
+              <!-- Mobile-only dropdown -->
+              <li class="nav-item dropdown d-lg-none">
+                <a
+                  class="nav-link dropdown-toggle text-white my-2"
+                  href="#"
+                  id="contactDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                  <li>
+                    <a class="dropdown-item" href="mailto:info@gmail.com">
+                      <i class="fa-solid fa-envelope me-2"></i> info@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="tel:+6271001234">
+                      <i class="fa-solid fa-phone me-2"></i> +62 7100 1234
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Desktop-only contact link -->
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link text-white my-2" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+
     <section>
       <div class="container-fluid home">
         <div class="container p-0">
           <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 text-start p-5 pr-10">
-              <h1 class="fw-bold headings p-2">
-                <span class="first"> #South </span>Kampar's Malnutrition Crisis
+              <h1 class="fw-normal text-white headings p-2">
+                <span class="first fw-normal"> #South </span>Kampar's
+                Malnutrition Crisis
               </h1>
               <p class="text-dark details p-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
                 odio!
               </p>
-              <a href="#donate" class="btn btn-danger text-white mt-3"
+              <a href="#donate" class="btn btn-btn text-white mt-3"
                 >Donate Now</a
               >
             </div>
@@ -198,17 +235,19 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A, earum!
         </p>
-        <div class="container mt-3 row d-flex justify-content-center">
+
+        <div
+          class="container mt-3 d-flex flex-wrap justify-content-center gap-4"
+        >
           <!-- Card 1 -->
-          <div class="card col-lg-3 m-2 custom-card" style="width: 300px">
+          <div class="card custom-card p-0 m-2" style="width: 340px">
             <img
               class="card-img-top"
               src="https://images.news18.com/ibnlive/uploads/2021/11/children-ngos-16368722174x3.png"
               alt="Card"
-              style="width: 100%"
             />
             <div
-              class="card-body text-start d-flex flex-column justify-content-between"
+              class="card-body text-start d-flex flex-column justify-content-between p-3"
             >
               <div>
                 <h4 class="card-title text-uppercase">
@@ -226,32 +265,24 @@
                   <p class="text-secondary mb-0">
                     <span class="first">$2,580</span> to go
                   </p>
-                  <p class="mb-0">80%</p>
+                  <h6 class="mb-0">80%</h6>
                 </div>
                 <div class="progress custom-progress">
-                  <div
-                    class="progress-bar bg-danger"
-                    role="progressbar"
-                    style="width: 80%"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                  <div class="progress-bar bg-bg" style="width: 80%"></div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="card col-lg-3 custom-card" style="width: 300px">
+          <div class="card custom-card p-0" style="width: 340px">
             <img
               class="card-img-top"
               src="https://s3.youthkiawaaz.com/wp-content/uploads/2019/02/01111030/Website-Thumbnail-83.jpg"
               alt="Card"
-              style="width: 100%"
             />
             <div
-              class="card-body text-start d-flex flex-column justify-content-between"
+              class="card-body text-start d-flex flex-column justify-content-between p-3"
             >
               <div>
                 <h4 class="card-title text-uppercase">
@@ -269,32 +300,24 @@
                   <p class="text-secondary mb-0">
                     <span class="first">$560</span> to go
                   </p>
-                  <p class="mb-0">90%</p>
+                  <h6 class="mb-0">90%</h6>
                 </div>
                 <div class="progress custom-progress">
-                  <div
-                    class="progress-bar bg-danger"
-                    role="progressbar"
-                    style="width: 90%"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                  <div class="progress-bar bg-bg" style="width: 90%"></div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="card col-lg-3 m-2 custom-card" style="width: 300px">
+          <div class="card custom-card p-0 m-2" style="width: 340px">
             <img
               class="card-img-top"
               src="https://thumbs.dreamstime.com/b/rural-education-program-outdoors-teaching-children-areas-isolated-villages-assam-india-classroom-50691803.jpg"
               alt="Card"
-              style="width: 100%"
             />
             <div
-              class="card-body text-start d-flex flex-column justify-content-between"
+              class="card-body text-start d-flex flex-column justify-content-between p-3"
             >
               <div>
                 <h4 class="card-title text-uppercase">
@@ -312,57 +335,52 @@
                   <p class="text-secondary mb-0">
                     <span class="first">$950</span> to go
                   </p>
-                  <p class="mb-0">70%</p>
+                  <h6 class="mb-0">70%</h6>
                 </div>
                 <div class="progress custom-progress">
-                  <div
-                    class="progress-bar bg-danger"
-                    role="progressbar"
-                    style="width: 70%"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                  <div class="progress-bar bg-bg" style="width: 70%"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="btn m-5 bg-danger text-white d-flex justify-content-start">
+
+        <div class="btn m-5 btn-btn text-white">
           <a href="#donate" class="text-white text-decoration-none button"
             >See All Causes</a
           >
         </div>
       </div>
+
       <div class="container-fluid donate">
-        <div
-          class="row text-start d-flex justify-content-center m align-items-center"
-        >
+        <div class="row text-start align-items-center">
+          <!-- LEFT COLUMN -->
           <div
-            class="col-md-6 d-flex flex-column justify-content-start align-items-center mt-5 py-5"
+            class="col-lg-6 col-md-12 d-flex flex-column justify-content-start align-items-start px-5 pt-4"
           >
-            <h3 class="text-white heading text-start mb-5">
-              <span class="first">Urgent&nbsp; </span> Causes
+            <h3 class="text-white heading2 text-start mb-3">
+              <span class="first">Urgent&nbsp;</span> Causes
             </h3>
             <h2 class="text-white">
               <span class="first">#School</span> for South Kampar's
             </h2>
-            <p class="text-white mb-2">
+            <p class="text-white mb-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
               odio!
             </p>
-            <div class="mt-auto donate-card">
+
+            <div class="donate-card">
               <div
-                class="d-flex justify-content-between align-items-center mb-1"
+                class="d-flex justify-content-between align-items-center mb-2"
               >
-                <p class="text-secondary my-3 mt-3">
+                <p class="text-secondary mb-0">
                   <span class="first">donated</span>
                 </p>
-                <p class="mb-0">80%</p>
+                <h6 class="mb-0">80%</h6>
               </div>
               <div class="progress custom-progress">
                 <div
-                  class="progress-bar bg-danger"
+                  class="progress-bar bg-bg"
                   role="progressbar"
                   style="width: 80%"
                   aria-valuenow="80"
@@ -370,22 +388,23 @@
                   aria-valuemax="100"
                 ></div>
               </div>
-              <p class="text-white mb-0">
-                <span class="first">$18,500</span>Raised of
-                <span class="first"> $25,000</span> Goal
+              <p class="text-white mt-2 mb-0">
+                <span class="first">$18,500</span> Raised of
+                <span class="first">$25,000</span> Goal
               </p>
             </div>
           </div>
 
+          <!-- RIGHT COLUMN -->
           <div
-            class="col-md-6 mt-5 position-relative d-flex justify-content-center align-items-end"
+            class="col-lg-6 col-md-12 d-flex flex-column align-items-center justify-content-end px-5 mt-4 position-relative"
           >
             <img
               src="./Screenshot 2025-05-01 125143.png"
               alt="img"
-              class="img-fluid rounded donate-img p-5"
+              class="img-fluid rounded donate-img"
             />
-            <button class="btn btn-danger donate-btn">Donate Now</button>
+            <button class="btn btn-btn donate-btn mt-3">Donate Now</button>
           </div>
         </div>
       </div>
@@ -394,12 +413,14 @@
         <div class="row py-5 d-flex align-items-center">
           <!-- Left Image -->
           <div class="col-md-6">
-            <img src="./image copy.png" alt="..." class="img-fluid" />
+            <img src="./image copy.png" alt="..." class="img-fluid h-100 m-0" />
           </div>
 
           <!-- Right Content -->
-          <div class="col-md-6 text-start">
-            <h2 class="text-uppercase heading mb-3">
+          <div
+            class="col-md-6 d-flex flex-column justify-content-start align-items-start"
+          >
+            <h2 class="text-uppercase heading1 mb-3">
               How To <span class="first">&nbsp;Help&nbsp;</span> Us
             </h2>
             <p class="text-secondary mb-4">
@@ -413,7 +434,7 @@
               <div class="col-12 mb-3">
                 <div class="d-flex align-items-start">
                   <i
-                    class="fa-solid fa-gift rounded-circle bg-danger p-3 text-light me-3"
+                    class="fa-solid fa-gift rounded-circle bg-bg p-3 text-light me-3"
                   ></i>
                   <div>
                     <h6 class="mb-0 text-secondary">Send Donation</h6>
@@ -430,7 +451,7 @@
               <div class="col-12 mb-3">
                 <div class="d-flex align-items-start">
                   <i
-                    class="fa-solid fa-handshake-angle rounded-circle bg-danger p-3 text-light me-3"
+                    class="fa-solid fa-handshake-angle rounded-circle bg-bg p-3 text-light me-3"
                   ></i>
                   <div>
                     <h6 class="mb-0 text-secondary">Become Volunteer</h6>
@@ -447,7 +468,7 @@
               <div class="col-12 mb-3">
                 <div class="d-flex align-items-start">
                   <i
-                    class="fa-solid fa-share-nodes rounded-circle bg-danger p-3 text-light me-3"
+                    class="fa-solid fa-share-nodes rounded-circle bg-bg p-3 text-light me-3"
                   ></i>
                   <div>
                     <h6 class="mb-0 text-secondary">Share Media</h6>
@@ -481,8 +502,8 @@
           <div
             class="buttons d-flex justify-content-center align-items-center m-3"
           >
-            <button class="btn btn-light text-danger me-3">Learn More</button>
-            <button class="btn btn-danger text-light">Join US Now</button>
+            <button class="btn btn-lights texts me-3">Learn More</button>
+            <button class="btn btn-btn text-light">Join US Now</button>
           </div>
         </div>
       </div>
@@ -663,8 +684,10 @@
             </div>
 
             <!-- Right Section -->
-            <div class="col-md-6 mt-5">
-              <h3 class="text-white heading mb-5 text-start">
+            <div
+              class="col-md-6 mt-5 d-flex flex-column justify-content-start align-items-start"
+            >
+              <h3 class="text-white heading1 mb-5">
                 Upcoming <span class="first">&nbsp;Events&nbsp;</span>
               </h3>
               <p class="text-white mb-2">
@@ -676,13 +699,13 @@
               <!-- Event 1 -->
               <div class="row py-3">
                 <div class="col-3 col-sm-2">
-                  <h6 class="bg-danger text-white box p-2">23 March</h6>
+                  <h6 class="bg-bg text-white box p-2">23 March</h6>
                 </div>
                 <div class="col-9 col-sm-10">
                   <h4 class="display4 text-light">
                     GATHERING BOOKS FOR CHILDREN
                   </h4>
-                  <p class="text-danger">
+                  <p class="texts">
                     <i class="fa-solid fa-clock"></i> 00:00 AM &nbsp; &nbsp;
                     <i class="fa-solid fa-location-dot"></i> Gujrat
                   </p>
@@ -696,11 +719,11 @@
               <!-- Event 2 -->
               <div class="row">
                 <div class="col-3 col-sm-2">
-                  <h6 class="bg-danger text-white box p-2">02 May</h6>
+                  <h6 class="bg-bg text-white box p-2">02 May</h6>
                 </div>
                 <div class="col-9 col-sm-10">
                   <h4 class="display4 text-light">MEET & GREET VOLUNTEER NY</h4>
-                  <p class="text-danger">
+                  <p class="texts">
                     <i class="fa-solid fa-clock"></i> 03:05 AM &nbsp; &nbsp;
                     <i class="fa-solid fa-location-dot"></i> UP
                   </p>
@@ -720,57 +743,73 @@
         <h1 class="heading mb-5">
           Our <span class="first">&nbsp;Partners&nbsp;</span>
         </h1>
-        <p>
+        <p class="text-secondary">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
           velit!
         </p>
-        <ul class="row nav services1 p-5 d-flex justify-content-center">
+        <ul
+          class="d-flex flex-wrap justify-content-center gap-2 pt-5 mx-auto nav services1 mb-5"
+        >
           <li
-            class="col-6 col-sm-4 col-md-4 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner m-2"
+            class="partner nav-item link text-center d-flex align-items-center justify-content-center"
+            style="width: 160px; height: 100px"
           >
             <a class="nav-link" href="#"
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
           <li
-            class="col-6 col-sm-4 col-md-6 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner m-2"
+            class="partner nav-item link text-center d-flex align-items-center justify-content-center"
+            style="width: 160px; height: 100px"
           >
             <a class="nav-link" href="#"
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
           <li
-            class="col-6 col-sm-4 col-md-6 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner m-2"
+            class="partner nav-item link text-center d-flex align-items-center justify-content-center"
+            style="width: 160px; height: 100px"
           >
             <a class="nav-link" href="#"
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
           <li
-            class="col-6 col-sm-4 col-md-6 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner m-2"
+            class="partner nav-item link text-center d-flex align-items-center justify-content-center"
+            style="width: 160px; height: 100px"
           >
             <a class="nav-link" href="#"
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
           <li
-            class="col-6 col-sm-4 col-md-4 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner m-2"
+            class="partner nav-item link text-center d-flex align-items-center justify-content-center"
+            style="width: 160px; height: 100px"
           >
             <a class="nav-link" href="#"
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
+          <li
+            class="partner nav-item link text-center d-flex align-items-center justify-content-center"
+            style="width: 160px; height: 100px"
+          >
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-person-shelter"></i
+            ></a>
+          </li>
+          <!-- repeat -->
         </ul>
       </div>
       <div
-        class="container-fluid bg-danger d-flex justify-content-around align-items-center text-center text-white py-2"
+        class="container-fluid bg-bg d-flex justify-content-around align-items-center text-center text-white py-2"
       >
         <div>
           <p class="pt-3">
             Join your hand with us for a better life and beautiful future.
           </p>
         </div>
-        <div><button class="btn btn-dark text-light">Donate now</button></div>
+        <div><button class="btn btn-donate text-light">Donate now</button></div>
       </div>
       <div class="container-fluid help">
         <div class="container py-5">
@@ -884,33 +923,33 @@
               <ul class="navbar-nav flex-row">
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-facebook text-secondary"></i
+                    ><i class="fa-brands fa-facebook text-white"></i
                   ></a>
                 </li>
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-twitter text-secondary"></i
+                    ><i class="fa-brands fa-twitter text-white"></i
                   ></a>
                 </li>
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-pinterest-p text-secondary"></i
+                    ><i class="fa-brands fa-pinterest-p text-white"></i
                   ></a>
                 </li>
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-google-plus-g text-secondary"></i
+                    ><i class="fa-brands fa-google-plus-g text-white"></i
                   ></a>
                 </li>
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-linkedin-in text-secondary"></i
+                    ><i class="fa-brands fa-linkedin-in text-white"></i
                   ></a>
                 </li>
 
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-instagram text-secondary"></i
+                    ><i class="fa-brands fa-instagram text-white"></i
                   ></a>
                 </li>
               </ul>
@@ -920,8 +959,8 @@
       </div>
       <footer class="container-fluid bg-dark text-white py-2">
         <div class="container text-start">
-          <p class="mb-0">
-            Copiright 2018©
+          <p class="mb-0 p-3">
+            Copyright 2018©
             <span class="firsts"> NGOOO PSD Template.</span>
             Designed by <span class="firsts">Rometheme. &nbsp;</span>
           </p>
