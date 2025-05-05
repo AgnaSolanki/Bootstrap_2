@@ -42,7 +42,9 @@
               <li
                 class="nav-item mt-2 d-flex align-items-center fw-bold text-capitalize"
               >
-                <p>Urgent: Awesome Template for Charity & non profit site</p>
+                <p class="text-color">
+                  Urgent: Awesome Template for Charity & non profit site
+                </p>
               </li>
             </ul>
             <!-- Social Icons -->
@@ -133,9 +135,9 @@
       </nav>
 
       <!-- Bottom Navigation -->
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid justify-content-end">
-          <!-- Toggler button (mobile) -->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-0">
+        <div class="container justify-content-start">
+          <!-- Toggler (for mobile) -->
           <button
             class="navbar-toggler"
             type="button"
@@ -148,32 +150,35 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Collapsible navigation items -->
+          <!-- Navigation links -->
           <div
-            class="collapse navbar-collapse justify-content-center"
+            class="collapse navbar-collapse justify-content-start"
             id="collapsibleNavbar"
           >
-            <ul class="navbar-nav text-uppercase flex-wrap text-center">
+            <ul class="navbar-nav navbar-navs text-uppercase">
               <li class="nav-item">
-                <a class="nav-link text-white my-2" href="#">Home</a>
+                <a class="nav-link nav-links" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white my-2" href="#">About</a>
+                <a class="nav-link nav-links" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white my-2" href="#">Causes</a>
+                <a class="nav-link nav-links" href="#">Causes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white my-2" href="#">Page</a>
+                <a class="nav-link nav-links" href="#">Page</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white my-2" href="#">Event</a>
+                <a class="nav-link nav-links" href="#">Events</a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
 
-              <!-- Mobile-only dropdown -->
+              <!-- Mobile contact info -->
               <li class="nav-item dropdown d-lg-none">
                 <a
-                  class="nav-link dropdown-toggle text-white my-2"
+                  class="nav-link dropdown-toggle"
                   href="#"
                   id="contactDropdown"
                   role="button"
@@ -194,11 +199,6 @@
                     </a>
                   </li>
                 </ul>
-              </li>
-
-              <!-- Desktop-only contact link -->
-              <li class="nav-item d-none d-lg-block">
-                <a class="nav-link text-white my-2" href="#">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -222,6 +222,14 @@
               <a href="#donate" class="btn btn-btn text-white mt-3"
                 >Donate Now</a
               >
+              <div class="arrow-buttons">
+                <button class="circle-btn">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="circle-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -232,7 +240,7 @@
         <h1 class="heading mb-5">
           We <span class="first"> &nbsp;Need&nbsp;</span>Your Help
         </h1>
-        <p>
+        <p class="text-secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A, earum!
         </p>
 
@@ -352,24 +360,26 @@
         </div>
       </div>
 
-      <div class="container-fluid donate">
-        <div class="row text-start align-items-center">
+      <div class="container-fluid donate mb-0 mt-0">
+        <div class="row text-start align-items-center px-5">
           <!-- LEFT COLUMN -->
           <div
-            class="col-lg-6 col-md-12 d-flex flex-column justify-content-start align-items-start px-5 pt-4"
+            class="col-lg-6 col-md-12 d-flex flex-column justify-content-start align-items-start px-5 pe-2 pt-4"
           >
-            <h3 class="text-white heading2 text-start mb-3">
-              <span class="first">Urgent&nbsp;</span> Causes
-            </h3>
+            <h6 class="text-white heading2 text-start mb-4 firsts-font2">
+              <span class="first">Urgent&nbsp;</span>
+              Causes
+            </h6>
             <h2 class="text-white">
-              <span class="first">#School</span> for South Kampar's
+              <span class="first">#School</span> for South Kampar's Students
             </h2>
             <p class="text-white mb-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-              odio!
+              odio! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veniam, temporibus? Lorem ipsum dolor sit.
             </p>
 
-            <div class="donate-card">
+            <div class="donate-card pe-5">
               <div
                 class="d-flex justify-content-between align-items-center mb-2"
               >
@@ -378,7 +388,7 @@
                 </p>
                 <h6 class="mb-0">80%</h6>
               </div>
-              <div class="progress custom-progress">
+              <div class="progress custom-progresses">
                 <div
                   class="progress-bar bg-bg"
                   role="progressbar"
@@ -397,12 +407,12 @@
 
           <!-- RIGHT COLUMN -->
           <div
-            class="col-lg-6 col-md-12 d-flex flex-column align-items-center justify-content-end px-5 mt-4 position-relative"
+            class="col-lg-6 col-md-12 d-flex flex-column align-items-center justify-content-center pe-5 mt-4 position-relative"
           >
             <img
               src="./Screenshot 2025-05-01 125143.png"
               alt="img"
-              class="img-fluid rounded donate-img"
+              class="img-fluid donate-img"
             />
             <button class="btn btn-btn donate-btn mt-3">Donate Now</button>
           </div>
@@ -410,10 +420,14 @@
       </div>
 
       <div class="container">
-        <div class="row py-5 d-flex align-items-center">
+        <div class="row py-5 row-full-height align-items-stretch h-100 mb-0">
           <!-- Left Image -->
-          <div class="col-md-6">
-            <img src="./image copy.png" alt="..." class="img-fluid h-100 m-0" />
+          <div class="col-md-6 mt-5">
+            <img
+              src="./image copy.png"
+              alt="..."
+              class="img-fluid full-height-img mt-5"
+            />
           </div>
 
           <!-- Right Content -->
@@ -425,19 +439,19 @@
             </h2>
             <p class="text-secondary mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-              odio!
+              odio! Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
 
             <!-- Help Items -->
             <div class="row">
               <!-- Item 1 -->
-              <div class="col-12 mb-3">
+              <div class="col-12 mb-4">
                 <div class="d-flex align-items-start">
                   <i
                     class="fa-solid fa-gift rounded-circle bg-bg p-3 text-light me-3"
                   ></i>
                   <div>
-                    <h6 class="mb-0 text-secondary">Send Donation</h6>
+                    <h6 class="mb-0 text-dark fw-bold">Send Donation</h6>
                     <p class="mb-0 small text-secondary">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Saepe iste reprehenderit, soluta adipisci nisi molestias
@@ -448,30 +462,31 @@
               </div>
 
               <!-- Item 2 -->
-              <div class="col-12 mb-3">
+              <div class="col-12 mb-4">
                 <div class="d-flex align-items-start">
                   <i
                     class="fa-solid fa-handshake-angle rounded-circle bg-bg p-3 text-light me-3"
                   ></i>
                   <div>
-                    <h6 class="mb-0 text-secondary">Become Volunteer</h6>
+                    <h6 class="mb-0 text-dark fw-bold">Become Volunteer</h6>
                     <p class="mb-0 small text-secondary">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Molestias cum alias quos, ipsum facilis ad, dolore natus
-                      temporibus sint, culpa eum aspernatur.
+                      temporibus sint, culpa eum aspernatur. Lorem ipsum dolor
+                      sit amet.
                     </p>
                   </div>
                 </div>
               </div>
 
               <!-- Item 3 -->
-              <div class="col-12 mb-3">
+              <div class="col-12">
                 <div class="d-flex align-items-start">
                   <i
                     class="fa-solid fa-share-nodes rounded-circle bg-bg p-3 text-light me-3"
                   ></i>
                   <div>
-                    <h6 class="mb-0 text-secondary">Share Media</h6>
+                    <h6 class="mb-0 text-dark fw-bold">Share Media</h6>
                     <p class="mb-0 small text-secondary">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Voluptatem qui dolore, eum unde magnam iusto earum dolor
@@ -485,15 +500,15 @@
         </div>
       </div>
 
-      <div class="container help">
+      <div class="container help mt-0">
         <div
-          class="container-fluid d-flex justify-content-center align-items-center flex-column text-center"
+          class="container d-flex justify-content-center align-items-center flex-column text-center px-5"
         >
           <h2 class="mt-3">
             We Help Many <span class="first">&nbsp;People&nbsp;</span>
           </h2>
           <p style="color: orangered">Want to become a volunteer</p>
-          <p class="m-3">
+          <p class="my-3 mx-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Reprehenderit voluptatibus dolor pariatur facere sapiente laborum
             cumque dolorem, nam maiores labore officia explicabo. Non porro
@@ -511,7 +526,7 @@
         <h1 class="heading mb-5">
           Our <span class="first">&nbsp;Volunteers&nbsp;</span>Says
         </h1>
-        <p>
+        <p class="text-secondary">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
           velit!
         </p>
@@ -523,7 +538,7 @@
                 src="./imagecopy2.png"
                 alt="..."
                 class="img-fluid rounded-circle"
-                style="width: 80px; height: 80px; object-fit: cover"
+                style="width: 120px; height: 120px; object-fit: cover"
               />
               <div class="title">
                 <p class="mb-0 small text-secondary fs-5">
@@ -545,7 +560,7 @@
                 src="./imagecopy2.png"
                 alt="..."
                 class="img-fluid rounded-circle"
-                style="width: 80px; height: 80px; object-fit: cover"
+                style="width: 120px; height: 120px; object-fit: cover"
               />
               <div class="title">
                 <p class="mb-0 small text-secondary fs-5">
@@ -570,7 +585,7 @@
                 src="./imagecopy2.png"
                 alt="..."
                 class="img-fluid rounded-circle"
-                style="width: 80px; height: 80px; object-fit: cover"
+                style="width: 120px; height: 120px; object-fit: cover"
               />
               <div class="title">
                 <p class="mb-0 small text-secondary fs-5">
@@ -592,7 +607,7 @@
                 src="./imagecopy2.png"
                 alt="..."
                 class="img-fluid rounded-circle"
-                style="width: 80px; height: 80px; object-fit: cover"
+                style="width: 120px; height: 120px; object-fit: cover"
               />
               <div class="title">
                 <p class="mb-0 small text-secondary fs-5">
@@ -616,7 +631,7 @@
           <h1 class="heading mb-5 pt-5">
             Our <span class="first">&nbsp;Gallary&nbsp;</span>
           </h1>
-          <p>
+          <p class="text-secondary">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
             velit!
           </p>
@@ -669,10 +684,10 @@
       </div>
 
       <div class="container-fluid home">
-        <div class="container py-5">
-          <div class="row align-items-center">
+        <div class="container p-5">
+          <div class="row g-5 align-items-center">
             <!-- Left Section -->
-            <div class="col-md-6 mt-5 text-start headings">
+            <div class="col-md-6 mt-5 text-start headings g-3 py-3">
               <h1 class="fw-bold p-2">#Events</h1>
               <h3><span class="first">MEET & GREET VOLUNTEER NY</span></h3>
               <p>
@@ -685,15 +700,14 @@
 
             <!-- Right Section -->
             <div
-              class="col-md-6 mt-5 d-flex flex-column justify-content-start align-items-start"
+              class="col-md-6 mt-5 d-flex flex-column justify-content-start align-items-start p-5"
             >
               <h3 class="text-white heading1 mb-5">
                 Upcoming <span class="first">&nbsp;Events&nbsp;</span>
               </h3>
               <p class="text-white mb-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                odio! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto, nulla.
+                odio! Lorem ipsum dolor sit amet consectetur
               </p>
 
               <!-- Event 1 -->
@@ -709,7 +723,7 @@
                     <i class="fa-solid fa-clock"></i> 00:00 AM &nbsp; &nbsp;
                     <i class="fa-solid fa-location-dot"></i> Gujrat
                   </p>
-                  <p class="text-light">
+                  <p class="text-">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Saepe, quisquam.
                   </p>
@@ -727,7 +741,7 @@
                     <i class="fa-solid fa-clock"></i> 03:05 AM &nbsp; &nbsp;
                     <i class="fa-solid fa-location-dot"></i> UP
                   </p>
-                  <p class="text-light">
+                  <p class="text-">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Saepe, quisquam. Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Autem, veritatis.
@@ -739,8 +753,8 @@
         </div>
       </div>
 
-      <div class="container text-center mt-5">
-        <h1 class="heading mb-5">
+      <div class="container text-center mt-5 mb-5">
+        <h1 class="heading mb-3">
           Our <span class="first">&nbsp;Partners&nbsp;</span>
         </h1>
         <p class="text-secondary">
@@ -798,11 +812,10 @@
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
-          <!-- repeat -->
         </ul>
       </div>
       <div
-        class="container-fluid bg-bg d-flex justify-content-around align-items-center text-center text-white py-2"
+        class="container-fluid bg-bg d-flex justify-content-around align-items-center text-center text-white py-2 mt-5"
       >
         <div>
           <p class="pt-3">
@@ -811,13 +824,18 @@
         </div>
         <div><button class="btn btn-donate text-light">Donate now</button></div>
       </div>
+      <!-- Container Start -->
       <div class="container-fluid help">
         <div class="container py-5">
           <div class="row g-4">
             <!-- Logo and About -->
-            <div class="col-md-6 col-lg-3 pb-3">
+            <div class="col-md-6 col-lg-3 pb-3 mb-5">
               <a class="navbar-brand text-warning fw-bold fs-3" href="#">
-                <img src="./image.png" alt="logo" class="logo-img m-2" />
+                <img
+                  src="./Screenshot 2025-05-05 070242.png"
+                  alt="logo"
+                  class="logo-img mb-4"
+                />
               </a>
               <div>
                 <p class="text-secondary">
@@ -831,48 +849,57 @@
 
             <!-- Navigation Links -->
             <div class="col-md-6 col-lg-3">
-              <h5 class="text-uppercase text-light mb-3 ml-3 first heading">
-                <span class="firsts">Who we are</span>
-              </h5>
-              <div class="row">
-                <div class="col-md-6 col-lg-6">
-                  <ul class="nav flex-column custom-list">
+              <h6
+                class="text-uppercase text-light d-flex justify-content-start align-items-start w-100"
+              >
+                <span class="firsts heading1">Who we are</span>
+              </h6>
+
+              <div class="row mt-5">
+                <div class="col-6">
+                  <ul class="nav flex-column custom-list-style">
                     <li class="nav-item">
                       <a class="nav-link p-0 text-secondary" href="#"
-                        >About US</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link p-0 text-secondary" href="#">Causes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link p-0 text-secondary" href="#"
-                        >Testriionials</a
+                        >› &nbsp; About Us</a
                       >
                     </li>
                     <li class="nav-item">
                       <a class="nav-link p-0 text-secondary" href="#"
-                        >Gallary</a
+                        >› &nbsp; Causes</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link p-0 text-secondary" href="#">FAQ</a>
+                      <a class="nav-link p-0 text-secondary" href="#"
+                        >› &nbsp; Testimonials</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0 text-secondary" href="#"
+                        >› &nbsp; Gallery</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0 text-secondary" href="#"
+                        >› &nbsp; FAQ</a
+                      >
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-6 col-lg-6">
-                  <ul class="nav flex-column custom-list">
+                <div class="col-6">
+                  <ul class="nav flex-column custom-list-style">
                     <li class="nav-item">
                       <a class="nav-link p-0 text-secondary" href="#"
-                        >Our Team</a
+                        >› &nbsp; Our Team</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link p-0 text-secondary" href="#">Events</a>
+                      <a class="nav-link p-0 text-secondary" href="#"
+                        >› &nbsp; Events</a
+                      >
                     </li>
                     <li class="nav-item">
                       <a class="nav-link p-0 text-secondary" href="#"
-                        >Contact US</a
+                        >› &nbsp; Contact Us</a
                       >
                     </li>
                   </ul>
@@ -880,12 +907,14 @@
               </div>
             </div>
 
-            <!-- Working Hours -->
+            <!-- Where We Work -->
             <div class="col-md-6 col-lg-3">
-              <h6 class="text-uppercase text-light mb-3 heading">
-                <span class="firsts"> Where We Work</span>
+              <h6
+                class="text-uppercase text-light mb-4 d-flex justify-content-start align-items-start w-100"
+              >
+                <span class="firsts heading1">Where We Work</span>
               </h6>
-              <div class="row text-secondary">
+              <div class="row text-secondary mt-5">
                 <div class="col-md-2">
                   <i class="fa-solid fa-location-dot"></i>
                 </div>
@@ -894,62 +923,55 @@
                 </div>
               </div>
               <div class="row text-secondary">
-                <div class="col-md-2">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="col-md-10">
-                  <p>info@ngoocharity.com</p>
-                </div>
+                <div class="col-md-2"><i class="fa-solid fa-envelope"></i></div>
+                <div class="col-md-10"><p>info@ngoocharity.com</p></div>
               </div>
               <div class="row text-secondary">
-                <div class="col-md-2">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="col-md-10">
-                  <p>+62 71001234</p>
-                </div>
+                <div class="col-md-2"><i class="fa-solid fa-phone"></i></div>
+                <div class="col-md-10"><p>+62 71001234</p></div>
               </div>
             </div>
 
-            <!-- Subscribe Form -->
+            <!-- Follow Us -->
             <div class="col-md-6 col-lg-3">
-              <h5 class="text-uppercase text-light mb-3 heading">
-                <span class="firsts"> Follow Us</span>
-              </h5>
-              <p class="text-secondary">
+              <h6
+                class="text-uppercase text-light mb-4 d-flex justify-content-start align-items-start w-100"
+              >
+                <span class="firsts heading1">Follow Us</span>
+              </h6>
+              <p class="text-secondary mt-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
                 saepe sit magni voluptatum inventore corrupti quia
               </p>
               <ul class="navbar-nav flex-row">
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-facebook text-white"></i
+                    ><i class="fa-brands fa-facebook"></i
                   ></a>
                 </li>
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-twitter text-white"></i
+                    ><i class="fa-brands fa-twitter"></i
                   ></a>
                 </li>
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-pinterest-p text-white"></i
+                    ><i class="fa-brands fa-pinterest-p"></i
                   ></a>
                 </li>
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-google-plus-g text-white"></i
+                    ><i class="fa-brands fa-google-plus-g"></i
                   ></a>
                 </li>
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-linkedin-in text-white"></i
+                    ><i class="fa-brands fa-linkedin-in"></i
                   ></a>
                 </li>
-
                 <li class="nav-item m-2">
                   <a class="nav-link text-white p-0" href="#"
-                    ><i class="fa-brands fa-instagram text-white"></i
+                    ><i class="fa-brands fa-instagram"></i
                   ></a>
                 </li>
               </ul>
@@ -957,12 +979,15 @@
           </div>
         </div>
       </div>
+      <!-- Container End -->
+
       <footer class="container-fluid bg-dark text-white py-2">
         <div class="container text-start">
-          <p class="mb-0 p-3">
+          <p class="mb-0 p-3 text-secondary">
             Copyright 2018©
-            <span class="firsts"> NGOOO PSD Template.</span>
-            Designed by <span class="firsts">Rometheme. &nbsp;</span>
+            <span class="firsts-font fw-normal"> NGOOO PSD Template.</span>
+            Designed by
+            <span class="firsts-font fw-normal">Rometheme. &nbsp;</span>
           </p>
         </div>
       </footer>
