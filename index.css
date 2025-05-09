@@ -359,21 +359,21 @@
   content: "";
   position: absolute;
   left: 5%;
-  bottom: -10px;
+  bottom: -15px;
   transform: translateX(-50%);
   width: 30px;
   height: 3px;
-  background-color: rgb(252, 127, 78);
+  background-color: rgb(247, 116, 64);
   border-radius: 2px; /* optional: make line ends a little rounded */
 }
 .heading2::after {
   content: "";
   position: absolute;
-  left: 5%;
-  bottom: -10px;
+  left: 10%;
+  bottom: -15px;
   transform: translateX(-50%);
   width: 30px;
-  height: 3px;
+  height: 2px;
   background-color: rgb(204, 201, 201);
   border-radius: 2px; /* optional: make line ends a little rounded */
 }
